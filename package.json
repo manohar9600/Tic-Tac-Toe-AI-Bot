@@ -9,8 +9,6 @@
   "author": "Manohar",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.7.10",
-    "jpickle": "^0.4.1",
-    "node-run-cmd": "^1.0.1"
+    "electron": "^2.0.4"
   }
 }

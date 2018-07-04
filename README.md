@@ -1,19 +1,17 @@
-# tic-tak-toe-v2.0
+# Tic Tac Toe AI bot
 
-          This is self learning Tic-Tac-Toe game . Where first player tries to win and second player
-          tries to defend.
+This is self learning Tic-Tac-Toe game . Where first player tries to win and second player
 
-          I used min-max algorithm and alpha-beta pruning.
+tries to defend. 
 
-          and created game ui to play against self-learned AI.
+I used min-max algorithm and alpha-beta pruning. 
 
-          First run train.py
+and created game UI to play against self-learned AI. 
 
-              A text file will be created of name 'train_data.txt' which contains what
-              step should be taken in a game situation.
+commands (in project folder):
 
-              Next run index.js using electron framework
-
-        electron-framework - https://electronjs.org/
-
-              
+```bash
+python train.py
+npm install
+npm start
+```
