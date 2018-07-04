@@ -1,0 +1,205 @@
+body{
+  background-color: #000033;
+}
+
+#game{
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 20px;
+  top: 20px;
+}
+
+
+#bl0, #bl1, #bl2, #bl3, #bl4, #bl5, #bl6, #bl7, #bl8{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+canvas{
+  //border: 2px solid white;
+}
+
+#bl0{
+  border-right:  2px solid #d98c8c;
+  border-bottom:  2px solid #d98c8c;
+}
+
+#bl1{
+  left: 80px;
+  border-right:  2px solid #d98c8c;
+  border-bottom:  2px solid #d98c8c;
+
+}
+
+#bl2{
+  left: 160px;
+  border-bottom:  2px solid #d98c8c;
+}
+
+#bl3{
+  top: 80px;
+  border-right:  2px solid #d98c8c;
+}
+
+#bl4{
+  top: 80px;
+  left: 80px;
+  border-right:  2px solid #d98c8c;
+}
+
+#bl5{
+  top: 80px;
+  left: 160px;
+}
+
+#bl6{
+  top: 160px;
+  border-top:  2px solid #d98c8c;
+  border-right:  2px solid #d98c8c;
+}
+
+#bl7{
+  top: 160px;
+  left: 80px;
+  border-top:  2px solid #d98c8c;
+  border-right:  2px solid #d98c8c;
+}
+
+#bl8{
+  top: 160px;
+  left: 160px;
+  border-top:  2px solid #d98c8c;
+}
+
+#bottomBar{
+  position: absolute;
+  top: 300px;
+}
+/* toggle switch */
+
+.switch {
+  position: absolute;
+  left: 70px;
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #000033;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #d98c8c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #d98c8c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+
+.btPlayer{
+  position: absolute;
+  left: 15px;
+  font-family: 'Carlito';
+  top: 0px;
+  font-size: 17px;
+  color: white;
+}
+
+#buttons{
+  position: absolute;
+  top: 350px;
+}
+
+#resetButton{
+  position: absolute;
+  left: 180px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #d98c8c;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 120px;
+  height: 45px;
+  transition: all 0.05s;
+  cursor: pointer;
+  padding-top: 14px;
+}
+
+#resetButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#resetButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#resetButton:hover span.b{
+  padding-right: 29px;
+}
+
+#resetButton:hover span.b:after {
+  opacity: 1;
+  right: 0;
+}
+
+#win{
+  position: absolute;
+  left: 310px;
+  top: 100px;
+}
+
+#dis{
+  color: white;
+  font-family: 'Carlito';
+}

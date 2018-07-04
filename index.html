@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body>
+  <div id = "game">
+    <div id = "bl0" onclick="boxClick(0, 'can0')">
+      <canvas id="can0" width="80" height="80"></canvas>
+    </div>
+
+    <div id = "bl1" onclick="boxClick(1, 'can1')">
+      <canvas id="can1" width="80" height="80"></canvas>
+    </div>
+
+    <div id = "bl2" onclick="boxClick(2, 'can2')">
+      <canvas id="can2" width="80" height="80"></canvas>
+
+    </div>
+
+    <div id = "bl3" onclick="boxClick(3, 'can3')">
+      <canvas id="can3" width="80" height="80"></canvas>
+
+    </div>
+
+    <div id = "bl4" onclick="boxClick(4, 'can4')">
+      <canvas id="can4" width="80" height="80"></canvas>
+
+    </div>
+
+    <div id = "bl5" onclick="boxClick(5, 'can5')">
+      <canvas id="can5" width="80" height="80"></canvas>
+
+    </div>
+
+    <div id = "bl6" onclick="boxClick(6, 'can6')">
+      <canvas id="can6" width="80" height="80"></canvas>
+
+    </div>
+
+    <div id = "bl7" onclick="boxClick(7, 'can7')">
+      <canvas id="can7" width="80" height="80"></canvas>
+
+    </div>
+
+    <div id = "bl8" onclick="boxClick(8, 'can8')">
+      <canvas id="can8" width="80" height="80"></canvas>
+
+    </div>
+  </div>
+
+  <div id = "bottomBar">
+    <div id = "play1">
+      <span class="btPlayer">Player1</span> <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id = "play2">
+    </div>
+  </div>
+
+  <div id = "buttons">
+    <div>
+      <button id = "resetButton" onclick="reset()"><span class = "b">Reset</span></button>
+    </div>
+  </div>
+  <div id = "win">
+    <p id = "dis"></p>
+  </div>
+
+  <script src = "ren.js"></script>
+</body>
+</html>
